@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState('');
 
  useEffect(() => {
-  fetch('http://a84f04537361a44d6b3b4d69fdc1e12d-1184505678.ap-south-1.elb.amazonaws.com/api/message')
+  fetch('http://a0f82c298b0324626b9d37303373d045-915183558.ap-south-1.elb.amazonaws.com/api/message')
     .then(res => res.json())
     .then(data => setMessage(data.message))
     .catch(err => console.log(err));
